@@ -22,7 +22,7 @@ USERNAME = environ.get('USERNAME', "@ganedu")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002294834035'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+4RB2-U2o9yE4ZmQ9')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ninjagaming1703:<iuCDyPoaSJ67Nhpg>@cluster0.mjzwp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ninjagaming1703:<iuCDyPoaSJ67Nhpg>@cluster0.mjzwp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "TELEGRAM_BOT_INFO")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
@@ -53,7 +53,7 @@ YEARS = [f'{i}' for i in range(2024 , 2002,-1 )]
 SEASONS = [f'season {i}'for i in range (1 , 23)]
 REF_PREMIUM = 30
 PREMIUM_POINT = 1500
-auth_channel = environ.get('AUTH_CHANNEL', '')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002383749103')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-100'))
 request_channel = environ.get('REQUEST_CHANNEL', '-100')
